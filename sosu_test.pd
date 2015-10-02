@@ -1,4 +1,4 @@
-#N canvas 40 90 1366 667 10;
+#N canvas 17 23 1366 667 10;
 #X obj -289 194 iter;
 #X obj -289 226 % 3;
 #X floatatom -242 208 5 0 0 0 - - -;
@@ -216,6 +216,10 @@
 #X msg 351 85 10;
 #X obj 930 146 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
+#X obj 426 11 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 920 98 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
 #X connect 0 0 1 0;
 #X connect 0 0 45 0;
 #X connect 0 0 71 0;
