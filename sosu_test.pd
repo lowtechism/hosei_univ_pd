@@ -1,4 +1,4 @@
-#N canvas 395 0 1405 981 10;
+#N canvas 40 90 1366 667 10;
 #X obj -289 194 iter;
 #X obj -289 226 % 3;
 #X floatatom -242 208 5 0 0 0 - - -;
@@ -79,7 +79,7 @@
 #X obj -227 107 t b f;
 #X floatatom 79 225 5 0 0 0 - - -;
 #X obj -227 71 hradio 15 1 0 8 empty empty empty 0 -8 0 10 -262144
--1 -1 2;
+-1 -1 0;
 #X obj 64 266 /;
 #X obj 72 473 pack f f;
 #X obj 99 416 f;
@@ -87,7 +87,7 @@
 #X msg 125 331 0;
 #X obj 72 364 t f b;
 #X obj 72 501 tabwrite test;
-#N canvas 0 0 450 300 (subpatch) 0;
+#N canvas 0 22 450 300 (subpatch) 0;
 #X array test 25 float 3;
 #A 0 0.4 0.6 1 1.4 2.2 2.6 3.4 3.8 4.6 5.8 6.2 7.4 8.2 8.6 9.4 10.6
 11.8 12.2 13.4 14.2 14.6 15.8 16.6 17.8 27.8;
@@ -133,15 +133,15 @@
 #X obj 1102 78 openpanel;
 #X obj 1102 166 soundfiler;
 #X msg 1104 123 read -resize \$1 hihat;
-#N canvas 0 0 450 300 (subpatch) 0;
+#N canvas 0 22 450 300 (subpatch) 0;
 #X array kick 21340 float 2;
 #X coords 0 1 21340 -1 200 140 1 0 0;
 #X restore 1137 340 graph;
-#N canvas 0 0 450 300 (subpatch) 0;
+#N canvas 0 22 450 300 (subpatch) 0;
 #X array snare 7915 float 2;
 #X coords 0 1 7915 -1 200 140 1 0 0;
 #X restore 1349 340 graph;
-#N canvas 0 0 450 300 (subpatch) 0;
+#N canvas 0 22 450 300 (subpatch) 0;
 #X array hihat 10418 float 2;
 #X coords 0 1 10418 -1 200 140 1 0 0;
 #X restore 1138 510 graph;
@@ -214,6 +214,8 @@
 #X obj 232 632 * 200;
 #X floatatom 828 204 5 0 0 0 - - -;
 #X msg 351 85 10;
+#X obj 930 146 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
 #X connect 0 0 1 0;
 #X connect 0 0 45 0;
 #X connect 0 0 71 0;
